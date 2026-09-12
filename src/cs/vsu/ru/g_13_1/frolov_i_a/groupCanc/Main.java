@@ -1,3 +1,5 @@
+package cs.vsu.ru.g_13_1.frolov_i_a.groupCanc;
+
 import java.util.Scanner;
 
 public class Main {
