@@ -3,6 +3,7 @@ package cs.vsu.ru.g_13_1.frolov_i_a.groupCanc;
 
 public class linkList {
     Node Head;
+    int size;
     public void addFirst(int value){
         Node newNode =  new Node(value);
         if(Head == null){
@@ -10,6 +11,24 @@ public class linkList {
         }else {
             newNode.next = Head;
             Head = newNode;
+        }
+    }
+    public void push(int value){
+        Node newNode = new Node(value);
+        newNode.next = Head;
+        Head = newNode;
+        size ++;
+    }
+    public void cancel(int m){
+        int Del;
+        if(m > size){
+            Del = size;
+        }else{
+            Del = m;
+        }
+        for (int i = 0; i < Del ; i ++){
+            Head = Head.next;
+            size --;
         }
     }
 //    public void addLast(int value){
