@@ -30,6 +30,7 @@ public class linkList {
             Head = Head.next;
             size --;
         }
+
     }
 //    public void addLast(int value){
 //        Node newNode =  new Node(value);
