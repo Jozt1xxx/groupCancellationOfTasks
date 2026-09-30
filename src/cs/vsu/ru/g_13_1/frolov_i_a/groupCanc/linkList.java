@@ -19,6 +19,13 @@ public class linkList {
         Head = newNode;
         size ++;
     }
+    public void pop(){
+        if(Head == null){
+            throw new IllegalStateException("стэк пуст");
+        }
+        Head = Head.next;
+        size--;
+    }
     public void cancel(int m){
         int Del;
         if(m > size){
